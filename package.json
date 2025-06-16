@@ -5,13 +5,15 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node",
-    "start:dev": "nodemon"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
     },
   "keywords": [
     "primeira",
     "api"
   ],
   "author": "Murilo Firmo Sola",
-  "license": "ISC"
+  "license": "ISC",
+   "type": "module"
 }
+ 
