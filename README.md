@@ -1,1 +1,1 @@
-Curso de Node.Js pela plataforma Tic em trilhas em conjunto com a equipe/empresa VENTURUS.
+Curso de Node.Js pela plataforma Tic em trilhas em conjunto com a equipe/empresa VENTURUS!
