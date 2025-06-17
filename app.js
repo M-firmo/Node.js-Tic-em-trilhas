@@ -1,5 +1,6 @@
 import http from 'http';
 import fs from 'fs';
+import rotas from './routes.js';
 
 /*
 fs.writeFileSync('./mensagem.txt', 'Olá, Tic em Trilhas do arquivo!', 'utf-8', (erro) =>{
@@ -36,11 +37,9 @@ fs.readFile('./mensagem.txt', 'utf-8', (erro, conteudo) =>{
     iniciaServidorhttp(conteudo);
 });
 
-function iniciaServidorhttp(mensagem){
+function iniciaServidorhttp(conteudo){
     const servidor = http.createServer((req, res ) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain; charset=utf-8');
-    res.end(mensagem);
+        rotas(req, res, { conteudo }); 
 });
 
 const porta = 3000;
